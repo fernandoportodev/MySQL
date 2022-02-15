@@ -43,6 +43,6 @@ SELECT nome, atributos, defesa FROM tb_personagem WHERE defesa BETWEEN 1000 and 
 
 SELECT * FROM tb_personagem WHERE nome LIKE "%c%";
 
-SELECT * FROM tb_personagem INNER JOIN tb_classe on tb_classe.id = tb_personagem.classe_id;
+SELECT * FROM tb_personagem INNER JOIN tb_classe ON tb_classe.id = tb_personagem.classe_id;
 
-SELECT * FROM tb_personagem INNER JOIN tb_classe on tb_classe.id = tb_personagem.classe_id WHERE tb_personagem.classe_id = 2;
+SELECT * FROM tb_personagem INNER JOIN tb_classe ON tb_classe.id = tb_personagem.classe_id WHERE tb_personagem.classe_id = 2;
